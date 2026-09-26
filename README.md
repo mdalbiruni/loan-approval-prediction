@@ -3,11 +3,11 @@
 An end-to-end Machine Learning classification project that predicts whether a loan application will be approved or rejected.
 
 ## 🚀 Live Demo
-Coming soon
+[Open Live App](https://loan-approval-prediction-hmdejmabx9k5xtwklqruck.streamlit.app/)
 
 ## 📊 Model Performance
 
-- Accuracy: 91.33%
+- Accuracy: 91.33%s
 - Precision: 92.08%
 - Recall: 94.16%
 - F1-score: 93.11%
