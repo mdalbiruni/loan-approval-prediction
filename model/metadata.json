@@ -1,0 +1,65 @@
+{
+  "target": "loan_status",
+  "target_mapping": {
+    "Rejected": 0,
+    "Approved": 1
+  },
+  "raw_features": [
+    "no_of_dependents",
+    "education",
+    "self_employed",
+    "income_annum",
+    "loan_amount",
+    "loan_term",
+    "cibil_score",
+    "residential_assets_value",
+    "commercial_assets_value",
+    "luxury_assets_value",
+    "bank_asset_value"
+  ],
+  "engineered_features": [
+    "total_assets",
+    "loan_to_income_ratio"
+  ],
+  "numeric_features": [
+    "no_of_dependents",
+    "income_annum",
+    "loan_amount",
+    "loan_term",
+    "cibil_score",
+    "residential_assets_value",
+    "commercial_assets_value",
+    "luxury_assets_value",
+    "bank_asset_value",
+    "total_assets",
+    "loan_to_income_ratio"
+  ],
+  "categorical_features": [
+    "education",
+    "self_employed"
+  ],
+  "metrics": {
+    "accuracy": 0.9133489461358314,
+    "precision": 0.9208103130755064,
+    "recall": 0.9416195856873822,
+    "f1": 0.931098696461825,
+    "roc_auc": 0.9729933007993563,
+    "confusion_matrix": [
+      [
+        280,
+        43
+      ],
+      [
+        31,
+        500
+      ]
+    ],
+    "train_rows": 3415,
+    "test_rows": 854,
+    "class_distribution": {
+      "0": 1613,
+      "1": 2656
+    }
+  },
+  "threshold": 0.5
+}

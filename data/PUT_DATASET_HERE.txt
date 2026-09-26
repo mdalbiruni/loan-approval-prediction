@@ -1,0 +1,6 @@
+Download the Kaggle dataset:
+https://www.kaggle.com/datasets/architsharma01/loan-approval-prediction-dataset
+
+Place the downloaded CSV in this folder and rename it exactly:
+
+loan_approval_dataset.csv
