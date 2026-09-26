@@ -1,116 +1,77 @@
 # 🏦 Loan Approval Prediction
 
-End-to-End Machine Learning project using **Logistic Regression**.
+An end-to-end Machine Learning classification project that predicts whether a loan application will be approved or rejected.
 
-## Assignment workflow covered
+## 🚀 Live Demo
+Coming soon
 
-Kaggle Dataset → Data Understanding → EDA → Data Cleaning → Feature Engineering → Feature Selection → Train/Test Split → Logistic Regression → Evaluation → Prediction → Streamlit
+## 📊 Model Performance
 
-## Dataset
+- Accuracy: 91.33%
+- Precision: 92.08%
+- Recall: 94.16%
+- F1-score: 93.11%
+- ROC-AUC: 97.30%
 
-Use the Kaggle dataset:
+## 🛠 Tech Stack
 
-**Loan Approval Prediction Dataset — Archit Sharma**
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Matplotlib
+- Seaborn
+- Streamlit
 
-Kaggle:
-https://www.kaggle.com/datasets/architsharma01/loan-approval-prediction-dataset
+## 🤖 Model
 
-Download `loan_approval_dataset.csv` and put it here:
+Logistic Regression
 
-```text
-data/loan_approval_dataset.csv
-```
+## 🎯 Objective
 
-The project is built specifically for these columns:
+The goal of this project is to predict loan approval or rejection using applicant and financial information.
 
-- loan_id
-- no_of_dependents
-- education
-- self_employed
-- income_annum
-- loan_amount
-- loan_term
-- cibil_score
-- residential_assets_value
-- commercial_assets_value
-- luxury_assets_value
-- bank_asset_value
-- loan_status
+## 📌 Project Workflow
 
-## Important improvements in this clean version
+Kaggle Dataset → EDA → Data Cleaning → Feature Engineering → Feature Selection → Train/Test Split → Logistic Regression → Evaluation → Prediction → Streamlit
 
-- Uses one exact Kaggle dataset schema.
-- Removes `loan_id` as an irrelevant identifier.
-- Cleans whitespace consistently.
-- Removes duplicates.
-- Clips invalid negative asset values to zero.
-- Creates two meaningful engineered features:
-  - `total_assets`
-  - `loan_to_income_ratio`
-- Uses the same preprocessing for training and prediction.
-- Uses Logistic Regression exactly as required.
-- Evaluates Accuracy, Precision, Recall, F1-score, Confusion Matrix and ROC-AUC.
-- Saves the complete preprocessing + model pipeline.
-- Streamlit automatically trains the model if model files are missing but the dataset exists.
+## ✨ Features Used
 
-## Windows setup
+- Number of Dependents
+- Education
+- Self Employed
+- Annual Income
+- Loan Amount
+- Loan Term
+- CIBIL Score
+- Residential Assets Value
+- Commercial Assets Value
+- Luxury Assets Value
+- Bank Asset Value
 
-Open CMD inside this folder:
+## ⚙️ Feature Engineering
 
-```cmd
+Two additional features were created:
+
+- Total Assets
+- Loan-to-Income Ratio
+
+## 📈 Evaluation Metrics
+
+The model was evaluated using:
+
+- Accuracy
+- Precision
+- Recall
+- F1-score
+- Confusion Matrix
+- ROC-AUC
+
+## 💻 Run Locally
+
+```bash
 python -m venv venv
 venv\Scripts\activate
-python -m pip install -r requirements.txt
-```
-
-## Train from terminal
-
-```cmd
+pip install -r requirements.txt
 python train_model.py
-```
-
-Successful output will create:
-
-```text
-model/loan_pipeline.joblib
-model/metadata.json
-```
-
-## Run Streamlit
-
-```cmd
 streamlit run app.py
-```
-
-If the model files do not exist, the app will automatically train them as long as the dataset exists.
-
-## Run Jupyter Notebook
-
-```cmd
-python -m notebook
-```
-
-Open:
-
-```text
-Loan_Approval_Prediction.ipynb
-```
-
-Then use **Run → Run All Cells**.
-
-## Project files
-
-```text
-Loan_Approval_Prediction_Clean/
-├── app.py
-├── features.py
-├── train_model.py
-├── Loan_Approval_Prediction.ipynb
-├── requirements.txt
-├── README.md
-├── setup.bat
-├── run_app.bat
-├── data/
-│   └── PUT_DATASET_HERE.txt
-└── model/
-```
