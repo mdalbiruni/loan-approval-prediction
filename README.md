@@ -3,7 +3,7 @@
 An end-to-end Machine Learning classification project that predicts whether a loan application will be approved or rejected.
 
 ## 🚀 Live Demo
-[Open Live App](https://loan-approval-prediction-hmdejmabx9k5xtwklqruck.streamlit.app/)
+[Open Live App](https://mdalbiruni-loan-predictor.streamlit.app/)
 
 ## 📊 Model Performance
 
